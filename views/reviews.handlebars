@@ -1,0 +1,18 @@
+<h2>{{game_title}}</h2>
+<ul class="reply">
+    {{#each reply}}
+    <div>
+        <h3>{{User}}</h3>
+        <li>{{comment}}</li>
+        <div>
+            {{likes}},{{dislikes}}
+        </div>
+    </div>
+    {{/each}}
+</ul>
+<div>
+<img src="{{image}}" alt="{{name}}">
+<p>{{publisher}}</p>
+<p>{{developer}}</p>
+<p>{{game_description}}</p>
+</div> 

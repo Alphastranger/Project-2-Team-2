@@ -1,0 +1,21 @@
+<h2>{{game_title}}</h2>
+<img src="{{image}}" alt="{{name}}">
+<ul class="reply">
+    {{#each reply}}
+    <div>
+        <h3>{{User}}</h3>
+        <li>{{comment}}</li>
+        <div>
+            {{likes}},{{dislikes}}
+        </div>
+    </div>
+    {{/each}}
+</ul>
+<ul class="sidebar">
+    {{#each game}}
+    <div>
+        <h3>{{game_title}}</h3>
+        <li><img src='{{image}}'></li>
+    </div>
+    {{/each}}
+</ul>
