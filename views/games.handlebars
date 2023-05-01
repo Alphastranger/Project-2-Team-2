@@ -1,16 +1,8 @@
 <h2>{{game_title}}</h2>
 <img src="{{image}}" alt="{{name}}">
-<ul class="reply">
-    {{#each reply}}
-    <div>
-        <h3>{{User}}</h3>
-        <li>{{comment}}</li>
-        <div>
-            {{likes}},{{dislikes}}
-        </div>
-    </div>
-    {{/each}}
-</ul>
+<p class="description">
+   {{description}}
+</p>
 <ul class="sidebar">
     {{#each game}}
     <div>
