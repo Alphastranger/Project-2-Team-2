@@ -1,4 +1,4 @@
-<h2>{{game_title}}</h2>
+<h2>{{games.name}}</h2>
 <form>
     <label for="comment">Comment Here:</label><br>
     <input type="text" id="comment" name="comment" size="50" method="post"><br>
@@ -7,17 +7,20 @@
 <ul class="reply">
     {{#each reply}}
     <div>
-        <h3>{{User}}</h3>
-        <li>{{comment}}</li>
+        <h3>{{user.name}}</h3>
+        <li>{{text}}</li>
+        <div>{{rating}}</div>
         <div>
-            {{likes}},{{dislikes}}
+            <button id="upvotes">{{up_votes}}</button>
+            <button id="downvotes">{{down_votes}}</button>
         </div>
     </div>
     {{/each}}
 </ul>
 <div>
 <img src="{{image}}" alt="{{name}}">
-<p>{{publisher}}</p>
-<p>{{developer}}</p>
-<p>{{game_description}}</p>
+<p>{{description}}</p>
+<p>{{genre}}</p>
+<p>{{release_date}}</p>
+<p>{{platform}}</p>
 </div> 
