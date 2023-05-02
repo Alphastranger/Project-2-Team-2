@@ -1,5 +1,5 @@
-<div class="game_library">{{#each game}}
-<img src="{{image}}">
-<p>{{game_title}}</p>
+<div class="game_library">
+{{#each game.image as |game|}}
+{{> gallery}}
 {{/each}}
 </div>
