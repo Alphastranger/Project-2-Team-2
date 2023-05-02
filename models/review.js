@@ -42,6 +42,11 @@ Review.init(
         model: 'user',
         key: 'id'
       }
+    }, games_id: {
+      references: {
+        model: 'games',
+        key: 'id'
+      }
     }
   },
   {
