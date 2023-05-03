@@ -18,8 +18,8 @@ router.get('/populargames', async (req, res) => {
     }
 });
 
-router.get('/games/:id', async (req, res) => {
-    res.render('games');
-});
+// router.get('/games/:id', async (req, res) => {
+//     res.render('games');
+// });
 
 module.exports = router;
