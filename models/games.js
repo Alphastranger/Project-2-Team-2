@@ -19,14 +19,13 @@ Game.init(
             type: DataTypes.STRING,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
         },
         genre: {
             type: DataTypes.STRING,
         },
         release_date: {
-            type: DataTypes.DATE,
-            allowNull: false,
+            type: DataTypes.STRING,
         },
         platform: {
             type: DataTypes.STRING,
