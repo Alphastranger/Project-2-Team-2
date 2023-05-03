@@ -15,14 +15,16 @@ router.get('/', async (req, res)=>{
         res.status(500).json(err)
     }
 })
-router.get('/games/:id', async (req, res)=> {
+router.get('/games/:id', async (req, res)=> { console.log(req.params)
     try {
-        const gameData2 = await Games.findbyPK(req.params.id, {
+        const gameData2 = await Games.findByPk(req.params.id, {
             include: [{model:Review}]
         })
         const game = gameData2.get({plain: true})
+        console.log(game)
         res.render('reviewpage', {game})
     } catch (err){
+        console.log(err)
         res.status(500).json(err)
     }
 })
