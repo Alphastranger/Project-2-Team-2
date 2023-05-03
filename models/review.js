@@ -43,6 +43,7 @@ Review.init(
         key: 'id'
       }
     }, games_id: {
+      type: DataTypes.INTEGER,
       references: {
         model: 'games',
         key: 'id'
