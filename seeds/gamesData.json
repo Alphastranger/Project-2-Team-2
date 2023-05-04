@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Counter-Strike: Global Offensive",
-        "image": "",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427",
         "description": "CS:GO is a popular shooting game where players team up to complete objectives like planting bombs or rescuing hostages. Players earn money to buy better weapons and equipment. The game has a large competitive community and lots of different maps and modes to play.",
         "genre": "Tactical-Shooter",
         "release-date": "August 21, 2012",
