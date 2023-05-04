@@ -5,7 +5,7 @@
     <input type="submit" value="Submit">
 </form>
 <ul class="reply">
-    {{#each reply}}
+    {{#each review}}
     <div>
         <h3>{{user.name}}</h3>
         <li>{{text}}</li>
@@ -18,7 +18,7 @@
     {{/each}}
 </ul>
 <div>
-<img src="{{image}}" alt="{{name}}">
+<img src="{{image}}" alt="{{games.name}}">
 <p>{{description}}</p>
 <p>{{genre}}</p>
 <p>{{release_date}}</p>
