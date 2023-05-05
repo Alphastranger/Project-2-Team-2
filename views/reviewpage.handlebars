@@ -1,24 +1,24 @@
-<h2>{{games.name}}</h2>
+<h2>{{name}}</h2>
 <form>
     <label for="comment">Comment Here:</label><br>
     <input type="text" id="comment" name="comment" size="50" method="post"><br>
     <input type="submit" value="Submit">
 </form>
 <ul class="reply">
-    {{#each review}}
+    {{#each game}}
     <div>
         <h3>{{user.name}}</h3>
-        <li>{{text}}</li>
-        <div>{{rating}}</div>
+        <li>{{review.text}}</li>
+        <div>{{review.rating}}</div>
         <div>
-            <button id="upvotes">{{up_votes}}</button>
-            <button id="downvotes">{{down_votes}}</button>
+            <button id="upvotes">{{review.up_votes}}</button>
+            <button id="downvotes">{{review.down_votes}}</button>
         </div>
     </div>
     {{/each}}
 </ul>
 <div>
-<img src="{{image}}" alt="{{games.name}}">
+<img src="{{image}}" alt="{{name}}">
 <p>{{description}}</p>
 <p>{{genre}}</p>
 <p>{{release_date}}</p>

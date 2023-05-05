@@ -15,7 +15,7 @@ router.post('/', withAuth, async (req,res) =>{
     }
 });
 //Update a review
-router.put('/:id', withAuth, async (req, res)=>{
+router.put('/reviews/:id', withAuth, async (req, res)=>{
     try {
         const reviewData = await Review.update({
             include: [
@@ -33,7 +33,7 @@ router.put('/:id', withAuth, async (req, res)=>{
     }
 })
 //Delete a review
-router.delete('/:id', withAuth, async (req,res)=>{
+router.delete('/reviews/:id', withAuth, async (req,res)=>{
     try {
         const reviewDel = await Review.destroy({
             where: {
