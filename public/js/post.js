@@ -6,10 +6,13 @@ const downvoteButton = document.getElementById('#downvotes')
 
 const reviewPosting = async (event)=> {
     event.preventDefault();
-    if (commentTitle && commentText && ratingNum) {
-        const response = await fetch ('/api/review/reviews', {
+    const title = commentTitle.value.trim()
+    const text = commentText.value.trim()
+    const rating = ratingNum.value
+    if (title && text && rating) {
+        const response = await fetch ('/api/reviews', {
             method: 'POST',
-            body: JSON.stringify({commentTitle, commentText, ratingNum}),
+            body: JSON.stringify({title, text, rating}),
             headers: {'Content-Type': 'application/json'},
         });
         if (response.ok) {
