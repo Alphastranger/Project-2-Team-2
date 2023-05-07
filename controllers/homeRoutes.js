@@ -75,7 +75,7 @@ router.get('/upcomingGames', async (req, res)=> {
     }
 })
 
-router.get('/reviews', async (req, res)=> {
+router.get('/reviewpage', async (req, res)=> {
     try {
         const revEl = await Review.findAll({
             include: [{model: User}]
