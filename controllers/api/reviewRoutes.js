@@ -2,12 +2,13 @@ const router = require('express').Router();
 const { Review, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 //Post a new review
-router.post('/', withAuth, async (req,res) =>{
+router.post('/reviews', withAuth, async (req,res) =>{
     try {
         const newReview = await Review.create({
             ...req.body,
-            title: req.session.title,
-            text: req.session.text,
+            title: req.session.commentTitle,
+            text: req.session.commentText,
+            rating: req.session.ratingNum,
         })
         res.status(200).json(newReview)
     } catch (err) {
@@ -15,7 +16,7 @@ router.post('/', withAuth, async (req,res) =>{
     }
 });
 //Update a review
-router.put('/:id', withAuth, async (req, res)=>{
+router.put('/reviews/:id', withAuth, async (req, res)=>{
     try {
         const reviewData = await Review.update({
             include: [
@@ -33,7 +34,7 @@ router.put('/:id', withAuth, async (req, res)=>{
     }
 })
 //Delete a review
-router.delete('/:id', withAuth, async (req,res)=>{
+router.delete('/reviews/:id', withAuth, async (req,res)=>{
     try {
         const reviewDel = await Review.destroy({
             where: {

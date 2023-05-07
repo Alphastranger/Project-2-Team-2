@@ -1,26 +1,32 @@
-<h2>{{games.name}}</h2>
-<form>
+<h2>{{game.name}}</h2>
+<form class="reviewForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" size="50"><br>
     <label for="comment">Comment Here:</label><br>
     <input type="text" id="comment" name="comment" size="50" method="post"><br>
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" name="rating" min="1" max="10">
     <input type="submit" value="Submit">
 </form>
 <ul class="reply">
-    {{#each review}}
-    <div>
-        <h3>{{user.name}}</h3>
-        <li>{{text}}</li>
-        <div>{{rating}}</div>
+    {{#each review2 as |review|}}
+    <li><div>
+        <h3>{{review.user.name}}</h3>
+        <h3>{{review.title}}</h3>
+        <h4>{{review.date_posted}}</h4>
+        <div>{{review.rating}}</div>
+        <div>{{review.text}}</div>
         <div>
-            <button id="upvotes">{{up_votes}}</button>
-            <button id="downvotes">{{down_votes}}</button>
+            <button id="upvotes">{{review.up_votes}}</button>
+            <button id="downvotes">{{review.down_votes}}</button>
         </div>
-    </div>
+    </div></li>
     {{/each}}
 </ul>
 <div>
-<img src="{{image}}" alt="{{games.name}}">
-<p>{{description}}</p>
-<p>{{genre}}</p>
-<p>{{release_date}}</p>
-<p>{{platform}}</p>
+<img src="{{game.image}}" alt="{{game.name}}">
+<p>{{game.description}}</p>
+<p>{{game.genre}}</p>
+<p>{{game.release_date}}</p>
+<p>{{game.platform}}</p>
 </div> 
