@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const sequelize = require('../config/connection');
 const { Games, User, Review} = require('../models')
 const withAuth = require ('../utils/auth')
 
@@ -18,24 +19,25 @@ router.get('/', async (req, res)=>{
 router.get('/games/:id', async (req, res)=> { console.log(req.params)
     try {
         const gameData2 = await Games.findByPk(req.params.id, {
-            include: [{model:Review,
-                attributes:[
-                    'title',
-                    'text',
-                    'rating',
-                    'date_posted',
-                    'up_votes',
-                    'down_votes'
-                ]}]
+            // include: [{model:Review,
+            //     attributes:[
+            //         'title',
+            //         'text',
+            //         'rating',
+            //         'date_posted',
+            //         'up_votes',
+            //         'down_votes'
+            //     ]
+            // }]
         })
-        // const reviewData2 = await Review.findAll({
-        //     where: {games_id: req.params.id}
-        // })
+        const reviewData2 = await Review.findAll({
+            where: {games_id: req.params.id}
+        })
         const game = gameData2.get({plain: true})
-        // const review2 = reviewData2.get({plain:true})
+        let reviews = reviewData2.map((sample) => sample.get({plain:true}))
         console.log(game)
         // console.log(review2)
-        res.render('reviewpage', {game})
+        res.render('reviewpage', {game, reviews})
     } catch (err){
         console.log(err)
         res.status(500).json(err)
@@ -78,9 +80,12 @@ router.get('/upcomingGames', async (req, res)=> {
 router.get('/reviewpage', async (req, res)=> {
     try {
         const revEl = await Review.findAll({
-            include: [{model: User}]
+            include: [{model: User}],
+            order: [
+                ['up_votes', 'DESC']
+            ]
         })
-        const reviews = revEl.map((rev)=> rev.get({plain:true}))
+        let reviews = revEl.map((rev)=> rev.get({plain:true}))
         res.render('reviews', {reviews})
     } catch (err){
         res.status(500).json(err)
