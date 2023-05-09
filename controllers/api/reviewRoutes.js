@@ -6,11 +6,6 @@ router.post('/', async (req,res) =>{
     try {
         const newReview = await Review.create({
             ...req.body,
-            // games_id: req.params.id
-            // title: req.session.title,
-            // text: req.session.text,
-            // rating: req.session.rating,
-            // date_posted: req.session.createdAt,
         })
         res.status(200).json(newReview)
     } catch (err) {
