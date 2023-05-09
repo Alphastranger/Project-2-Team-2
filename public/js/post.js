@@ -26,8 +26,7 @@ const reviewPosting = async (event)=> {
         });
         console.log(response)
         if (response.ok) {
-            // window.location.reload()
-            alert('success')
+            window.location.reload()
         } else {
             alert('Failed to post')
         }
