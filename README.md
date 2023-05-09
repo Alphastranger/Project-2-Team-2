@@ -32,7 +32,7 @@ https://gamereviewsnow.herokuapp.com/
 
 ## Credits
 Collaborators: </br>
-[Mike Sima](https://github.com/djamesclark) <br/>
+[Mike Sima](https://github.com/ShadowBox23) <br/>
 [Joseph Flynn](https://github.com/Alphastranger) </br>
 [Kayla Norris](https://github.com/KaylaNorris) </br> 
 
