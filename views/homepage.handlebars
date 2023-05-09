@@ -1,17 +1,17 @@
 <div class="Popular_games">
-    <h2> Popular Games </h2>
+    <h2 class="text-danger"> Popular Games </h2>
     {{#each games}}
     <a href='/:id'><img src='{{image}}'></a>
     {{/each}}
 </div>
 <div class="Upcoming_releases">
-    <h2> Upcoming releases </h2>
+    <h2 class="text-danger"> Upcoming releases </h2>
     {{#each games}}
     <a href='/:id'><img src='{{image}}'></a>
     {{/each}}
 </div>
 <div class="Reviews">
-    <h2> Reviews </h2>
+    <h2 class="text-danger"> Reviews </h2>
     {{#each review}}
     <a href='/reviews'>{{review.title}}</a>
     {{/each}}
