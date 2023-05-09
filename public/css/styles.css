@@ -1,4 +1,8 @@
 .game_library {
     display: flex;
     flex-wrap: wrap;
+    height: 200px;
+    width: 300px;
+}
+@media screen  and (max-width: 900px) {
 }
