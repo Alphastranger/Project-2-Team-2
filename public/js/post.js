@@ -15,6 +15,7 @@ const reviewPosting = async (event)=> {
     console.log(rating)
     console.log(event)
     console.log(document.URL)
+    console.log(URL.slice(-1))
     console.log(ul[0].dataset.value)
     const games_id = URL.slice(-1)
     if (title && text && rating) {
@@ -25,7 +26,8 @@ const reviewPosting = async (event)=> {
         });
         console.log(response)
         if (response.ok) {
-            window.location.reload()
+            // window.location.reload()
+            alert('success')
         } else {
             alert('Failed to post')
         }
