@@ -1,0 +1,4 @@
+.game_library {
+    display: flex;
+    flex-wrap: wrap;
+}
