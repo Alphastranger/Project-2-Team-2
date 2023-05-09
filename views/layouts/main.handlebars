@@ -32,13 +32,13 @@
                 <a class="nav-link text-dark" href="/reviewpage">Reviews</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
+                <a class="nav-link" href="#">
                     {{#if logged_in}}
-                    <a class="logout" href='/logout'>
+                    <a class="logout text-dark" href='/logout'>
                         Sign Out
                     </a>
                     {{else}}
-                    <a href='/login'>
+                    <a class="text-dark" href='/login'>
                         Login
                     </a>
                     {{/if}}</a>
@@ -48,6 +48,27 @@
 
 </nav>
     {{{body}}}
+     <footer class="mt-5">
+      <nav class="navbar navbar-dark bg-dark">
+  <div class="container-md">
+    <a class="navbar-brand text-danger" href="#">Games Now!</a>
+      <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/popularGames">Popular Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/upcomingGames">Upcoming releases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/reviewpage">Reviews</a>
+            </li>
+        </ul>
+  </div>
+</nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

@@ -1,21 +1,21 @@
 <div class="Popular_games">
-    <h2 class="text-danger"> Popular Games </h2>
+    <h2 class="text-danger mt-5 ms-3"> Popular Games </h2>
     <div class="popgames">
     {{#each games}}
-    <a href='/games/{{id}}'><img src='{{image}}'></a>
+    <a href='/games/{{id}}'><img src='{{image}}' width="400" height="300" class="mt-3 ms-3 shadow-lg p-3 mb-5 ms-3 bg-body rounded"></a>
     {{/each}}
     </div>
 </div>
 <div class="Upcoming_releases">
-    <h2 class="text-danger"> Upcoming releases </h2>
+    <h2 class="text-danger mt-5 ms-3"> Upcoming releases </h2>
     <div class="popgames">
     {{#each games}}
-    <a href='/games/{{id}}'><img src='{{image}}'></a>
+    <a href='/games/{{id}}'><img src='{{image}}' width="400" height="300" class="mt-3 ms-3 shadow-lg p-3 mb-5 ms-3 bg-body rounded"></a>
     {{/each}}
     </div>
 </div>
 <div class="Reviews">
-    <h2 class="text-danger"> Reviews </h2>
+    <h2 class="text-danger mt-5 ms-3"> Reviews </h2>
     <div class="popgames">
     {{#each review}}
     <a href='/reviews/:id'>{{title}}</a>
