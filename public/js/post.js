@@ -26,8 +26,6 @@ const reviewPosting = async (event)=> {
         console.log(response)
         if (response.ok) {
             window.location.reload()
-            // document.location.replace(`/games/${id}`)
-            // alert('Success')
         } else {
             alert('Failed to post')
         }

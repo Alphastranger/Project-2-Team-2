@@ -19,16 +19,6 @@ router.get('/', async (req, res)=>{
 router.get('/games/:id', async (req, res)=> { console.log(req.params)
     try {
         const gameData2 = await Games.findByPk(req.params.id, {
-            // include: [{model:Review,
-            //     attributes:[
-            //         'title',
-            //         'text',
-            //         'rating',
-            //         'date_posted',
-            //         'up_votes',
-            //         'down_votes'
-            //     ]
-            // }]
         })
         const reviewData2 = await Review.findAll({
             where: {games_id: req.params.id}

@@ -12,17 +12,12 @@ router.post('/', async (req,res) =>{
         res.status(400).json(err)
     }
 });
+//Look at review list
 router.get('/', async (req, res) => {
     try {
         const reviewData = await Review.findAll({
         });
-
-        // const review = reviewData.map((game) => game.get({ plain: true }));
         res.json(reviewData)
-        // res.render('populargames',{
-        //     review,
-        //     logged_in: req.session.logged_in
-        // });
     } catch (err) {
         console.log(err)
         res.status(500).json(err);
