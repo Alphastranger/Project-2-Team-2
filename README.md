@@ -35,6 +35,7 @@ Collaborators: </br>
 [Mike Sima](https://github.com/ShadowBox23) <br/>
 [Joseph Flynn](https://github.com/Alphastranger) </br>
 [Kayla Norris](https://github.com/KaylaNorris) </br> 
+[Nathan Dugue](https://github.com/NathanDugue) </br>
 
 Special Thanks to TAs Conner Rhodes and Stephon Autery 
 
