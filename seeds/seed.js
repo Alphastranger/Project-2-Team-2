@@ -9,6 +9,11 @@ const seedDatabase = async () => {
         individualHooks: true,
         returning: true,
     });
-    const reviews = await Review.bulkCreate(reviewData)
+
+    for (const review of reviewData){
+        const reviews = await Review.create(
+          { ...review, 
+            games_id: games[0].id}
+        )}
 }
 seedDatabase()

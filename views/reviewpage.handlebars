@@ -1,5 +1,5 @@
 <h2>{{game.name}}</h2>
-<form class="reviewForm">
+<form class="reviewForm" id="reviewF">
     <label for="title">Title:</label><br>
     <input type="text" id="title" name="title" size="50"><br>
     <label for="comment">Comment Here:</label><br>
@@ -10,17 +10,17 @@
 </form>
 <ul class="reply">
     {{#each reviews as |review|}}
-    <li><div>
+    <li><section data-value={{review.id}} class="testreview">
         <h3>{{review.user.name}}</h3>
         <h3>{{review.title}}</h3>
         <h4>{{review.date_posted}}</h4>
         <div>{{review.rating}}</div>
         <div>{{review.text}}</div>
         <div>
-            <button id="upvotes">{{review.up_votes}}</button>
+            <button class="upvotes">{{review.up_votes}}</button>
             <button id="downvotes">{{review.down_votes}}</button>
         </div>
-    </div></li>
+    </section></li>
     {{/each}}
 </ul>
 <div>
