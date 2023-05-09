@@ -28,6 +28,7 @@ A random Stoicism quote is displayed upon loading the application. Below it is a
 
 ## Deployed Application
 
+https://gamereviewsnow.herokuapp.com/
 
 ## Credits
 Collaborators: </br>
