@@ -1,8 +1,22 @@
-.game_library {
+.popgames{
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    width: 300px;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 50%;
+    height: auto;
+
+}
+.game_library{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 50%;
+    max-height: 50%;
+}
+.reply {
+    border: 2px solid red
 }
 
 
