@@ -20,10 +20,10 @@ N/A
 
 ## Usage
 
-From the homepage, you can view popular games and upcoming releases. When you click the game image, you're able to leave a rating and see other ratings(if any). You're also able to view the game's description, genre, and platforms it's available on. 
+From the homepage, you can view popular games and upcoming releases. When you click the game's image, you're able to leave a rating and see other ratings(if any). You're also able to view the game's description, genre, and platforms it's available on. 
 
 ## Preview
-![Screenshot 1](SCREENSHOT LINK HERE)
+![Screenshot 1](public/images/gamesnow-screenshot.png)
 
 
 ## Deployed Application
@@ -35,6 +35,8 @@ Collaborators: </br>
 [Mike Sima](https://github.com/ShadowBox23) <br/>
 [Joseph Flynn](https://github.com/Alphastranger) </br>
 [Kayla Norris](https://github.com/KaylaNorris) </br> 
+
+Special Thanks to TAs Conner Rhodes and Stephon Autery 
 
 
 ## License
