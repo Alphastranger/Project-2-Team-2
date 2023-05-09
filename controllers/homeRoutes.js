@@ -34,9 +34,9 @@ router.get('/games/:id', async (req, res)=> { console.log(req.params)
             where: {games_id: req.params.id}
         })
         const game = gameData2.get({plain: true})
-        let reviews = reviewData2.map((sample) => sample.get({plain:true}))
+        let reviews = reviewData2.map((review) => review.get({plain:true}))
+        console.log(reviews)
         console.log(game)
-        // console.log(review2)
         res.render('reviewpage', {game, reviews})
     } catch (err){
         console.log(err)

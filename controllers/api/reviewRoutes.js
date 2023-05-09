@@ -2,22 +2,39 @@ const router = require('express').Router();
 const { Review, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 //Post a new review
-router.post('/', withAuth, async (req,res) =>{
+router.post('/', async (req,res) =>{
     try {
         const newReview = await Review.create({
             ...req.body,
-            title: req.session.title,
-            text: req.session.text,
-            rating: req.session.rating,
+            // games_id: req.params.id
+            // title: req.session.title,
+            // text: req.session.text,
+            // rating: req.session.rating,
+            // date_posted: req.session.createdAt,
         })
         res.status(200).json(newReview)
     } catch (err) {
         res.status(400).json(err)
     }
 });
+router.get('/', async (req, res) => {
+    try {
+        const reviewData = await Review.findAll({
+        });
 
+        // const review = reviewData.map((game) => game.get({ plain: true }));
+        res.json(reviewData)
+        // res.render('populargames',{
+        //     review,
+        //     logged_in: req.session.logged_in
+        // });
+    } catch (err) {
+        console.log(err)
+        res.status(500).json(err);
+    }
+});
 //Update a review
-router.put('/reviews/:id', withAuth, async (req, res)=>{
+router.put('/', async (req, res)=>{
     try {
         const reviewData = await Review.update({
             include: [

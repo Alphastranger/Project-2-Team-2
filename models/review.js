@@ -25,16 +25,17 @@ Review.init(
     },
     date_posted: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
+      defaultValue: DataTypes.NOW,
     },
     up_votes: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       defaultValue: 0,
     },
     down_votes: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       defaultValue: 0,
     }, user_id: {
       type: DataTypes.INTEGER,
