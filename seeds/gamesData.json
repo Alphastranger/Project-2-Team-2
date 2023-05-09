@@ -11,7 +11,7 @@
     {
         "id": "2",
         "name": "Elden Ring",
-        "image": "",
+        "image": "https://i.ytimg.com/vi/JldMvQMO_5U/maxresdefault.jpg",
         "description": "Elden Ring is an upcoming action role-playing video game developed by FromSoftware and published by Bandai Namco. It takes place in a vast and interconnected open world called the Lands Between, where players will encounter a variety of creatures and enemies as they explore the environment. The game features challenging combat, deep customization options, and a rich story and lore that players can uncover as they progress through the game. It is highly anticipated by fans of FromSoftware's previous games and is expected to be a thrilling and immersive gaming experience.",
         "release-date": "February 25, 2022",
         "genre": [
@@ -23,7 +23,7 @@
     {
         "id": "3",
         "name": "God of War: Ragnarök",
-        "image": "",
+        "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/aqZdSwWyy9JcQ66BxHDKrky6.jpg",
         "description": "God of War: Ragnarök is an upcoming action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It is a sequel to the critically acclaimed God of War game released in 2018. The game continues the story of Kratos, a powerful warrior who is now living in the realm of Norse gods and raising his son Atreus. The game is set during the time of Ragnarök, the end of the world in Norse mythology, and Kratos and Atreus must embark on a journey to prevent the cataclysmic event from happening. The game features intense combat, exploration of a rich and diverse world, and a deep and emotional story. It is highly anticipated by fans of the series and is expected to be a thrilling gaming experience.",
         "release-date": "November 9, 2022",
         "genre": [
@@ -36,7 +36,7 @@
     {
         "id": "4",
         "name": "Halo Infinite",
-        "image": "",
+        "image": "https://assets.xboxservices.com/assets/95/eb/95eb973b-006b-4533-8902-f5a3f8dfd955.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg",
         "description": "Halo Infinite is an upcoming first-person shooter video game developed by 343 Industries and published by Xbox Game Studios. It is the sixth main entry in the Halo series and a sequel to Halo 5: Guardians. The game features the return of Master Chief, the iconic protagonist of the series, as he faces off against a new enemy faction called the Banished on a mysterious Halo ring. The game is set to feature a large and open-world environment, with new weapons and vehicles for players to use in combat. Halo Infinite also includes a new multiplayer mode that is free-to-play and features new gameplay mechanics, customization options, and modes such as Big Team Battle. It is highly anticipated by fans of the series and is expected to be a major release for the Xbox platform.",
         "release-date": "November 15, 2021",
         "genre": "FPS",
@@ -45,7 +45,7 @@
     {
         "id": "5",
         "name": "Star Wars Jedi: Survivor",
-        "image": "",
+        "image": "https://cdn1.epicgames.com/offer/5a2ea5980ac147c195775039195a3081/EGS_STARWARSJediSurvivorStandardEdition_RespawnEntertainment_S1_2560x1440-f9e8bb0209bb9ec26636838fbc3dcd85",
         "description": "The story of Cal Kestis continues in Star Wars Jedi: Survivor™, a third-person, galaxy-spanning, action-adventure game from Respawn Entertainment, developed in collaboration with Lucasfilm Games. This narratively driven, single-player title picks up 5 years after the events of Star Wars Jedi: Fallen Order™ and follows Cal’s increasingly desperate fight as the galaxy descends further into darkness. Pushed to the edges of the galaxy by the Empire, Cal will find himself surrounded by threats new and familiar. As one of the last surviving Jedi Knights, Cal is driven to make a stand during the galaxy’s darkest times — but how far is he willing to go to protect himself, his crew, and the legacy of the Jedi Order?",
         "release-date": "April 28, 2023",
         "genre": [
